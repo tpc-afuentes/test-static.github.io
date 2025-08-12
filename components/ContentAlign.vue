@@ -168,10 +168,10 @@ const props = defineProps({
       align: {
         body: `content-align-body flex flex-col items-start md:self-stretch gap-[30px] px-[20px] pt-[40px] md:flex-[1_0_0] md:gap-[20px] md:px-[0px] md:pt-[0px] xl:justify-center xl:gap-[40px]`,
         buttons: `content-align-body-buttons flex flex-col lg:justify-between 2xl:justify-start gap-[20px] w-full pt-[10px] md:pt-[20px] lg:flex-row 2xl:w-auto 2xl:pt-[0px]`,
-        content: `content-align-content md:flex md:items-start md:gap-[50px] xl:justify-center xl:gap-[192px]`,
+        content: `content-align-content md:flex md:items-start md:gap-[50px] xl:justify-center 2xl:gap-[192px]`,
         dates: `content-align-body-dates`,
-        image: `content-align-image h-[75vw] md:h-[30vw] md:w-[40vw] md:overflow-hidden md:rounded-[10px] xl:shrink-0`,
-        layout: `content-align -mx-[20px] md:-mx-[100px] xl:mx-[0px] md:px-[100px] xl:px-[288px] py-[50px] md:py-[60px] xl:py-[5vw] 2xl:py-[100px]`,
+        image: `content-align-image h-[75vw] md:h-[30vw] md:w-[40vw] md:overflow-hidden md:rounded-[0px] xl:shrink-0`,
+        layout: `content-align xl:mx-[0px] md:px-[100px] 2xl:px-[288px] py-[50px] md:py-[60px] xl:py-[5vw] 2xl:py-[100px]`,
         li: `flex items-center gap-[10px] leading-[27px]`,
         list: `content-align-body-list w-full relative overflow-hidden after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[40px]`,
         more: `flex items-center gap-[8px] !normal-case underline underline-offset-4 xl:cursor-pointer`,
@@ -328,7 +328,7 @@ onUnmounted(() => {
           </label>
         </div>
         <label v-if="disclaimer" class="note capital" v-html="useParseText(disclaimer)" />
-        <div v-if="layout !== 'list' && (btnltext || btnrtext)">
+        <div v-if="layout !== 'list' && (btnltext || btnrtext)" class="w-full">
           <div :class="css[layout].buttons">
             <Button v-if="btnltext"
                     variant="secondary"
