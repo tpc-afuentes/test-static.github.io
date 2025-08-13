@@ -83,7 +83,7 @@ const cardsCSS = computed(() => {
 </script>
 
 <template>
-  <div v-if="showDatesRanged(startDate, endDate)" :class="['content-colum flex flex-col md:flex-row md:flex-wrap md:justify-between py-[50px] gap-[40px] lg:gap-[60px] md:py-[60px] lx:py-[5vw] 2xl:py-[100px]', { 'bg_color bg-[--component-bg-alt] -mx-[20px] md:-mx-[10vw] px-[20px] md:px-[10vw]': bgColor }]">
+  <div v-if="showDatesRanged(startDate, endDate)" :class="['content-colum flex flex-col md:flex-row md:flex-wrap md:justify-between py-[50px] gap-[40px] lg:gap-[60px] md:py-[60px] lx:py-[5vw] 2xl:py-[100px]', { 'bg_color bg-[--component-bg-alt] px-[20px] md:px-[10vw]': bgColor }]">
     <div v-if="title || description" :class="textContainerCSS">
       <div v-if="title">
         <div :class="titleCSS">

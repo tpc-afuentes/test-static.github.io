@@ -91,7 +91,7 @@ const props = defineProps({
 <template>
 <div :class="['content-intro py-[50px] md:py-[60px] xl:py-[5vw] 2xl:py-[100px] overflow-hidden h-auto flex flex-col items-center gap-[30px] md:gap-[40px]',
              removepaddingbottom ? '!pb-0' : '',
-             {'bg-[--component-bg-alt] -mx-[20px] px-[20px] md:-mx-[10vw] md:px-[10vw]': bgcolor}]">
+             {'bg-[--component-bg-alt] px-[20px] md:px-[10vw]': bgcolor}]">
   <div v-if="timerdatetime">
     <Timer :date="timerdatetime" :text="timertext" @visibility="visibleTimer" :theme="themetimer" :size="sizetimer"/>
   </div>
