@@ -187,7 +187,7 @@ const props = defineProps({
         content: `content-list-content md:flex md:justify-center md:items-start md:gap-[20px] xl:justify-between xl:items-stretch`,
         dates: `content-list-body-dates`,
         image: `content-list-image overflow-hidden h-[60vw] md:rounded-t-[10px] md:h-[40vw] md:w-[40vw] md:rounded-b-[10px] xl:shrink-0`,
-        layout: `content-list -mx-[20px] md:-mx-[100px] lg:-mx-[192px] xl:mx-[0px] md:px-[100px] xl:px-[0px] py-[50px] md:py-[60px] xl:py-[5vw] 2xl:py-[100px]`,
+        layout: `content-list -mx-[20px] md:-mx-[10vw] xl:mx-[0px] md:px-[100px] xl:px-[0px] py-[50px] md:py-[60px] xl:py-[5vw] 2xl:py-[100px]`,
         li: ``,
         list: ``,
         more: ``,

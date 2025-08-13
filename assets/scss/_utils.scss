@@ -147,11 +147,18 @@ label {
     }
   }
 }
-.body-medium {
-  font-size: $font-size-l;
-  // font-family: $font-third; // LULU
-  &-bold {
-    font-weight: $font-weight-bold;
+.body {
+  font-size: $font-size-s;
+  &-small {
+    font-size: $font-size-xs;
+    line-height: 18.2px;
+  }
+  &-medium {
+    font-size: $font-size-l;
+    // font-family: $font-third; // LULU
+    &-bold {
+      font-weight: $font-weight-bold;
+    }
   }
 }
 .disabled {

@@ -44,7 +44,7 @@ const props = defineProps({
 <template>
 <div class="content-center h-auto py-[50px] md:py-[60px] xl:py-[5vw] 2xl:py-[100px] flex flex-col gap-[40px] lg:gap-[60px]">
   <div :class="[{'order-2': investcontent}, 'scrollme']">
-    <div :class="{'animateme': !investcontent}" data-when="enter" data-from="0.9" data-to="0" data-scalex="1.3" data-scaley="1.2">
+    <div :class="['md:max-w-[80vw]', {'animateme': !investcontent}]" data-when="enter" data-from="0.9" data-to="0" data-scalex="1.3" data-scaley="1.2">
       <ImageStrapi v-if="media?.mime?.includes('image')" :image="media" fit :class="['content-center__image', {'scale_init': !investcontent}]" />
       <div v-else class="content-center__image video scale_init">
         <VideoStrapi :video="media" />
@@ -73,6 +73,8 @@ const props = defineProps({
     max-width: 100vw;
     margin: 0 calc($padding-container-s * -1);
     @media screen and (min-width: $md) {
+      max-width: 80vw;
+      margin: 0 auto;
       height: 34.28vw;
       :deep() {
         img {
@@ -118,7 +120,7 @@ const props = defineProps({
       :deep(.button) {
         width: 100%;
         @media screen and (min-width: $md) {
-          width: auto; 
+          width: auto;
         }
       }
     }

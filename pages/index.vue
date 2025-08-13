@@ -681,7 +681,7 @@ const data = {
     "decorativeLine": true,
     "autoscroll": null,
     "chevron": null,
-    "imageaspec": false,
+    "imageaspec": 'default',
     "cards": [
       {
         "id": 200,
