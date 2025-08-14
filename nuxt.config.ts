@@ -13,7 +13,14 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/i18n',
   ],
-
+    ssr: true,
+    target: 'static',
+    nitro: {
+      preset: 'static',
+      output: {
+        publicDir: 'docs',
+      },
+    },
   i18n: {
     defaultLocale: 'en',
     lazy: true,
