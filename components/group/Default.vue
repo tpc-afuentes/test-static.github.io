@@ -1,14 +1,13 @@
 <script setup>
 import { defineAsyncComponent, ref } from 'vue'
-import { useI18n } from '#imports'
-import useParseText from '../../composables/useParseText'
-import { useMediaQuery } from '@vueuse/core'
-import moment from 'moment'
-import 'moment/dist/locale/es'
+// import { useI18n } from '#imports'
+// import useParseText from '../../composables/useParseText'
+// import { useMediaQuery } from '@vueuse/core'
+// import moment from 'moment'
+// import 'moment/dist/locale/es'
 
 const ImageStrapi = defineAsyncComponent(() => import('../ImageStrapi.vue'))
 const VideoStrapi = defineAsyncComponent(() => import('../VideoStrapi.vue'))
-const TitleLine = defineAsyncComponent(() => import('../TitleLine.vue'))
 const BodyText = defineAsyncComponent(() => import('../BodyText.vue'))
 const Button = defineAsyncComponent(() => import('../Button.vue'))
 const Icon = defineAsyncComponent(() => import('../Icon.vue'))

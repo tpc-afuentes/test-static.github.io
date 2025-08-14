@@ -8,7 +8,6 @@ import { defineAsyncComponent, ref } from 'vue'
 
 const ImageStrapi = defineAsyncComponent(() => import('../ImageStrapi.vue'))
 const VideoStrapi = defineAsyncComponent(() => import('../VideoStrapi.vue'))
-const TitleLine = defineAsyncComponent(() => import('../TitleLine.vue'))
 const BodyText = defineAsyncComponent(() => import('../BodyText.vue'))
 const Button = defineAsyncComponent(() => import('../Button.vue'))
 const Icon = defineAsyncComponent(() => import('../Icon.vue'))
@@ -132,10 +131,10 @@ const props = defineProps({
   }
 })
 
-const formatDate = (dateFrom, dateTo, textStart, textEnd) => {
-  moment.locale(locale.value)
-  return (dateFrom && dateTo) || (textStart && dateTo) || (dateFrom && textEnd) || (textStart && textEnd) ? `${(textStart || (moment(dateFrom).format('ll') + ' -') || '') } ${ !textStart || !textEnd ? '' : '' } ${(textEnd || moment(dateTo).format('ll') || '') }` : false
-}
+// const formatDate = (dateFrom, dateTo, textStart, textEnd) => {
+//   moment.locale(locale.value)
+//   return (dateFrom && dateTo) || (textStart && dateTo) || (dateFrom && textEnd) || (textStart && textEnd) ? `${(textStart || (moment(dateFrom).format('ll') + ' -') || '') } ${ !textStart || !textEnd ? '' : '' } ${(textEnd || moment(dateTo).format('ll') || '') }` : false
+// }
 
 const mouseHover = () => {
   isDesktop.value && !props.playvideo && (hover.value = true)
@@ -165,21 +164,21 @@ const mouseRemoveHover = () => {
         'md:pl-[40px] lg:pl-[20px] lg:pr-[40px]': totalcards > 2
       }
     ]">
-      <div v-if="title || tag" :class="['flex flex-col gap-[10px]', {'border-b-[1px] border-b-solid border-b-[--gray-border]': decorativeline}]">
+      <div v-if="title || tag" :class="['flex flex-col gap-[10px]']">
         <BodyText v-if="tag" wrapper="label" type="strong"> {{ tag }} </BodyText>
         <BodyText v-if="title" wrapper="p" :class="{'pb-[10px]': decorativeline, 'description': true}"> {{ title }} </BodyText>
       </div>
       <BodyText v-if="description" wrapper="p" :html="useParseText(description)" />
-      <div v-if="(formatDate(bookfrom, bookto, booktextstart, booktextend) || formatDate(stayfrom, stayto, staytextstart, staytextend))" class="flex flex-row flex-wrap gap-[0px_40px]">
-        <BodyText v-if="formatDate(bookfrom, bookto, booktextstart, booktextend)" wrapper="p" type="capital" class="flex items-center gap-[6px]" >
-          <Icon v-if="enableicon" variant="calendar" class="w-[16px] h-[16px]" />
-          <span id="dates">{{ textbook || t('book') }}</span> <span>{{ formatDate(bookfrom, bookto, booktextstart, booktextend) }}</span>
-        </BodyText>
-        <BodyText v-if="formatDate(stayfrom, stayto, staytextstart, staytextend)" wrapper="p" type="capital" class="flex items-center gap-[6px]" >
-          <Icon v-if="enableicon" variant="calendar" class="w-[16px] h-[16px]" />
-          <span id="dates">{{ textstay || t('stay') }}</span> <span>{{ formatDate(stayfrom, stayto, staytextstart, staytextend) }}</span>
-        </BodyText>
-      </div>
+        <!-- <div v-if="(formatDate(bookfrom, bookto, booktextstart, booktextend) || formatDate(stayfrom, stayto, staytextstart, staytextend))" class="flex flex-row flex-wrap gap-[0px_40px]">
+          <BodyText v-if="formatDate(bookfrom, bookto, booktextstart, booktextend)" wrapper="p" type="capital" class="flex items-center gap-[6px]" >
+            <Icon v-if="enableicon" variant="calendar" class="w-[16px] h-[16px]" />
+            <span id="dates">{{ textbook || t('book') }}</span> <span>{{ formatDate(bookfrom, bookto, booktextstart, booktextend) }}</span>
+          </BodyText>
+          <BodyText v-if="formatDate(stayfrom, stayto, staytextstart, staytextend)" wrapper="p" type="capital" class="flex items-center gap-[6px]" >
+            <Icon v-if="enableicon" variant="calendar" class="w-[16px] h-[16px]" />
+            <span id="dates">{{ textstay || t('stay') }}</span> <span>{{ formatDate(stayfrom, stayto, staytextstart, staytextend) }}</span>
+          </BodyText>
+        </div> -->
       <BodyText wrapper="p" type="note capital" :html="useParseText(disclaimer)" />
       <div v-if="btnltext || btnrtext" class="flex flex-row items-start content-start gap-[40px]">
         <Button v-if="btnltext"

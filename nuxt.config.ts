@@ -59,6 +59,17 @@ export default defineNuxtConfig({
     },
   },
 
+  components: {
+    global: true,
+    dirs: [
+      '~/components',
+      {
+        path: '~/components/group',
+        prefix: 'group'
+      }
+    ]
+  },
+
   experimental: {
     defaults: {
       nuxtLink: {

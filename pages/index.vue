@@ -168,200 +168,6 @@ const data = {
     "btnlmodal": null,
     "btnrmodal": null
   },
-  contentGroup: {
-    "stylecomponent": "Colum",
-    "component": "ContentGroup",
-    "enablebg": false,
-    "countries": null,
-    "cards": [
-      {
-        "id": 128,
-        "title": "Itinerary creation",
-        "tag": null,
-        "description": "We design complete travel experiences that integrate flights, accommodation, local transfers, tours, entertainment, and cultural immersion.",
-        "disclaimer": null,
-        "bookto": null,
-        "bookfrom": null,
-        "textbook": null,
-        "bookstart": null,
-        "stayto": null,
-        "stayfrom": null,
-        "textstay": null,
-        "staystart": null,
-        "btnltext": null,
-        "btnlexternal": null,
-        "btnrtext": null,
-        "btnrexternal": null,
-        "decorativeline": true,
-        "playvideo": true,
-        "startdate": null,
-        "enddate": null,
-        "textbookto": null,
-        "textstayto": null,
-        "enableicon": false,
-        "align": "left",
-        "media": {
-          "id": 2394,
-          "name": "los-cabos-travel-destination-le-blanc-spa-resorts.webp",
-          "alternativeText": null,
-          "caption": null,
-          "width": 768,
-          "height": 650,
-          "imageformats": {
-            "small": {
-              "url": "https://www.leblancsparesorts.com/los_cabos_travel_destination_le_blanc_spa_resorts_c54af9ab23.webp"
-            },
-            "xsmall": {
-              "url": "https://www.leblancsparesorts.com/los_cabos_travel_destination_le_blanc_spa_resorts_c54af9ab23.webp"
-            },
-            "thumbnail": {
-              "url": "https://www.leblancsparesorts.com/los_cabos_travel_destination_le_blanc_spa_resorts_c54af9ab23.webp"
-            }
-          },
-          "hash": "los_cabos_travel_destination_le_blanc_spa_resorts_c54af9ab23",
-          "ext": ".webp",
-          "mime": "image/webp",
-          "size": 41.91,
-          "url": "https://www.leblancsparesorts.com/los_cabos_travel_destination_le_blanc_spa_resorts_c54af9ab23.webp",
-          "previewUrl": null,
-          "provider": "aws-s3",
-          "provider_metadata": null,
-          "isUrlSigned": true
-        },
-        "btnrinternal": null,
-        "btnrmodal": null,
-        "btnlinternal": null,
-        "btnlmodal": null
-      },
-      {
-        "id": 129,
-        "title": "Direct",
-        "tag": null,
-        "description": "We design complete travel experiences that integrate flights, accommodation, local transfers, tours, entertainment, and cultural immersion.",
-        "disclaimer": null,
-        "bookto": null,
-        "bookfrom": null,
-        "textbook": null,
-        "bookstart": null,
-        "stayto": null,
-        "stayfrom": null,
-        "textstay": null,
-        "staystart": null,
-        "btnltext": null,
-        "btnlexternal": null,
-        "btnrtext": null,
-        "btnrexternal": null,
-        "decorativeline": true,
-        "playvideo": true,
-        "startdate": null,
-        "enddate": null,
-        "textbookto": null,
-        "textstayto": null,
-        "enableicon": false,
-        "align": "left",
-        "media": {
-          "id": 1955,
-          "name": "ancestral-massage-spa-le-blanc-spa-resorts.webp",
-          "alternativeText": "Healing touch Spa",
-          "caption": "Achieve a complete state of wellbeing",
-          "width": 1620,
-          "height": 1080,
-          "imageformats": {
-            "large": {
-              "url": "https://www.leblancsparesorts.com/ancestral-massage-spa-le-blanc-spa-resorts_cd9c0112ba.webp"
-            },
-            "small": {
-              "url": "https://www.leblancsparesorts.com/ancestral-massage-spa-le-blanc-spa-resorts_cd9c0112ba.webp"
-            },
-            "medium": {
-              "url": "https://www.leblancsparesorts.com/ancestral-massage-spa-le-blanc-spa-resorts_cd9c0112ba.webp"
-            },
-            "xlarge": {
-              "url": "https://www.leblancsparesorts.com/ancestral-massage-spa-le-blanc-spa-resorts_cd9c0112ba.webp"
-            },
-            "xsmall": {
-              "url": "https://www.leblancsparesorts.com/ancestral-massage-spa-le-blanc-spa-resorts_cd9c0112ba.webp"
-            },
-            "thumbnail": {
-              "url": "https://www.leblancsparesorts.com/ancestral-massage-spa-le-blanc-spa-resorts_cd9c0112ba.webp"
-            }
-          },
-          "hash": "ancestral-massage-spa-le-blanc-spa-resorts_cd9c0112ba",
-          "ext": ".webp",
-          "mime": "image/webp",
-          "size": 105.74,
-          "url": "https://www.leblancsparesorts.com/ancestral-massage-spa-le-blanc-spa-resorts_cd9c0112ba.webp",
-          "previewUrl": null,
-          "provider": "aws-s3",
-          "provider_metadata": null,
-          "isUrlSigned": true
-        },
-        "btnrinternal": null,
-        "btnrmodal": null,
-        "btnlinternal": null,
-        "btnlmodal": null
-      },
-      {
-        "id": 130,
-        "title": "End to enc",
-        "tag": null,
-        "description": "We design complete travel experiences that integrate flights, accommodation, local transfers, tours, entertainment, and cultural immersion.",
-        "disclaimer": null,
-        "bookto": null,
-        "bookfrom": null,
-        "textbook": null,
-        "bookstart": null,
-        "stayto": null,
-        "stayfrom": null,
-        "textstay": null,
-        "staystart": null,
-        "btnltext": null,
-        "btnlexternal": null,
-        "btnrtext": null,
-        "btnrexternal": null,
-        "decorativeline": true,
-        "playvideo": true,
-        "startdate": null,
-        "enddate": null,
-        "textbookto": null,
-        "textstayto": null,
-        "enableicon": false,
-        "align": "left",
-        "media": {
-          "id": 2394,
-          "name": "los-cabos-travel-destination-le-blanc-spa-resorts.webp",
-          "alternativeText": null,
-          "caption": null,
-          "width": 768,
-          "height": 650,
-          "imageformats": {
-            "small": {
-              "url": "https://www.leblancsparesorts.com/los_cabos_travel_destination_le_blanc_spa_resorts_c54af9ab23.webp"
-            },
-            "xsmall": {
-              "url": "https://www.leblancsparesorts.com/los_cabos_travel_destination_le_blanc_spa_resorts_c54af9ab23.webp"
-            },
-            "thumbnail": {
-              "url": "https://www.leblancsparesorts.com/los_cabos_travel_destination_le_blanc_spa_resorts_c54af9ab23.webp"
-            }
-          },
-          "hash": "los_cabos_travel_destination_le_blanc_spa_resorts_c54af9ab23",
-          "ext": ".webp",
-          "mime": "image/webp",
-          "size": 41.91,
-          "url": "https://www.leblancsparesorts.com/los_cabos_travel_destination_le_blanc_spa_resorts_c54af9ab23.webp",
-          "previewUrl": null,
-          "provider": "aws-s3",
-          "provider_metadata": null,
-          "isUrlSigned": true
-        },
-        "btnrinternal": null,
-        "btnrmodal": null,
-        "btnlinternal": null,
-        "btnlmodal": null
-      }
-    ]
-  },
   contentColum: {
     "title": null,
     "btnText": null,
@@ -1332,7 +1138,201 @@ const data = {
     "countries": null,
     "btninternal": null,
     "btnmodal": null
-  }
+  },
+  contentGroup: {
+    "stylecomponent": "Colum",
+    "component": "ContentGroup",
+    "enablebg": false,
+    "countries": null,
+    "cards": [
+      {
+        "id": 128,
+        "title": "Itinerary creation",
+        "tag": null,
+        "description": "We design complete travel experiences that integrate flights, accommodation, local transfers, tours, entertainment, and cultural immersion.",
+        "disclaimer": null,
+        "bookto": null,
+        "bookfrom": null,
+        "textbook": null,
+        "bookstart": null,
+        "stayto": null,
+        "stayfrom": null,
+        "textstay": null,
+        "staystart": null,
+        "btnltext": null,
+        "btnlexternal": null,
+        "btnrtext": null,
+        "btnrexternal": null,
+        "decorativeline": true,
+        "playvideo": true,
+        "startdate": null,
+        "enddate": null,
+        "textbookto": null,
+        "textstayto": null,
+        "enableicon": false,
+        "align": "left",
+        "media": {
+          "id": 2394,
+          "name": "los-cabos-travel-destination-le-blanc-spa-resorts.webp",
+          "alternativeText": null,
+          "caption": null,
+          "width": 768,
+          "height": 650,
+          "imageformats": {
+            "small": {
+              "url": "https://www.leblancsparesorts.com/los_cabos_travel_destination_le_blanc_spa_resorts_c54af9ab23.webp"
+            },
+            "xsmall": {
+              "url": "https://www.leblancsparesorts.com/los_cabos_travel_destination_le_blanc_spa_resorts_c54af9ab23.webp"
+            },
+            "thumbnail": {
+              "url": "https://www.leblancsparesorts.com/los_cabos_travel_destination_le_blanc_spa_resorts_c54af9ab23.webp"
+            }
+          },
+          "hash": "los_cabos_travel_destination_le_blanc_spa_resorts_c54af9ab23",
+          "ext": ".webp",
+          "mime": "image/webp",
+          "size": 41.91,
+          "url": "https://www.leblancsparesorts.com/los_cabos_travel_destination_le_blanc_spa_resorts_c54af9ab23.webp",
+          "previewUrl": null,
+          "provider": "aws-s3",
+          "provider_metadata": null,
+          "isUrlSigned": true
+        },
+        "btnrinternal": null,
+        "btnrmodal": null,
+        "btnlinternal": null,
+        "btnlmodal": null
+      },
+      {
+        "id": 129,
+        "title": "Direct",
+        "tag": null,
+        "description": "We design complete travel experiences that integrate flights, accommodation, local transfers, tours, entertainment, and cultural immersion.",
+        "disclaimer": null,
+        "bookto": null,
+        "bookfrom": null,
+        "textbook": null,
+        "bookstart": null,
+        "stayto": null,
+        "stayfrom": null,
+        "textstay": null,
+        "staystart": null,
+        "btnltext": null,
+        "btnlexternal": null,
+        "btnrtext": null,
+        "btnrexternal": null,
+        "decorativeline": true,
+        "playvideo": true,
+        "startdate": null,
+        "enddate": null,
+        "textbookto": null,
+        "textstayto": null,
+        "enableicon": false,
+        "align": "left",
+        "media": {
+          "id": 1955,
+          "name": "ancestral-massage-spa-le-blanc-spa-resorts.webp",
+          "alternativeText": "Healing touch Spa",
+          "caption": "Achieve a complete state of wellbeing",
+          "width": 1620,
+          "height": 1080,
+          "imageformats": {
+            "large": {
+              "url": "https://www.leblancsparesorts.com/ancestral-massage-spa-le-blanc-spa-resorts_cd9c0112ba.webp"
+            },
+            "small": {
+              "url": "https://www.leblancsparesorts.com/ancestral-massage-spa-le-blanc-spa-resorts_cd9c0112ba.webp"
+            },
+            "medium": {
+              "url": "https://www.leblancsparesorts.com/ancestral-massage-spa-le-blanc-spa-resorts_cd9c0112ba.webp"
+            },
+            "xlarge": {
+              "url": "https://www.leblancsparesorts.com/ancestral-massage-spa-le-blanc-spa-resorts_cd9c0112ba.webp"
+            },
+            "xsmall": {
+              "url": "https://www.leblancsparesorts.com/ancestral-massage-spa-le-blanc-spa-resorts_cd9c0112ba.webp"
+            },
+            "thumbnail": {
+              "url": "https://www.leblancsparesorts.com/ancestral-massage-spa-le-blanc-spa-resorts_cd9c0112ba.webp"
+            }
+          },
+          "hash": "ancestral-massage-spa-le-blanc-spa-resorts_cd9c0112ba",
+          "ext": ".webp",
+          "mime": "image/webp",
+          "size": 105.74,
+          "url": "https://www.leblancsparesorts.com/ancestral-massage-spa-le-blanc-spa-resorts_cd9c0112ba.webp",
+          "previewUrl": null,
+          "provider": "aws-s3",
+          "provider_metadata": null,
+          "isUrlSigned": true
+        },
+        "btnrinternal": null,
+        "btnrmodal": null,
+        "btnlinternal": null,
+        "btnlmodal": null
+      },
+      {
+        "id": 130,
+        "title": "End to enc",
+        "tag": null,
+        "description": "We design complete travel experiences that integrate flights, accommodation, local transfers, tours, entertainment, and cultural immersion.",
+        "disclaimer": null,
+        "bookto": null,
+        "bookfrom": null,
+        "textbook": null,
+        "bookstart": null,
+        "stayto": null,
+        "stayfrom": null,
+        "textstay": null,
+        "staystart": null,
+        "btnltext": null,
+        "btnlexternal": null,
+        "btnrtext": null,
+        "btnrexternal": null,
+        "decorativeline": true,
+        "playvideo": true,
+        "startdate": null,
+        "enddate": null,
+        "textbookto": null,
+        "textstayto": null,
+        "enableicon": false,
+        "align": "left",
+        "media": {
+          "id": 2394,
+          "name": "los-cabos-travel-destination-le-blanc-spa-resorts.webp",
+          "alternativeText": null,
+          "caption": null,
+          "width": 768,
+          "height": 650,
+          "imageformats": {
+            "small": {
+              "url": "https://www.leblancsparesorts.com/los_cabos_travel_destination_le_blanc_spa_resorts_c54af9ab23.webp"
+            },
+            "xsmall": {
+              "url": "https://www.leblancsparesorts.com/los_cabos_travel_destination_le_blanc_spa_resorts_c54af9ab23.webp"
+            },
+            "thumbnail": {
+              "url": "https://www.leblancsparesorts.com/los_cabos_travel_destination_le_blanc_spa_resorts_c54af9ab23.webp"
+            }
+          },
+          "hash": "los_cabos_travel_destination_le_blanc_spa_resorts_c54af9ab23",
+          "ext": ".webp",
+          "mime": "image/webp",
+          "size": 41.91,
+          "url": "https://www.leblancsparesorts.com/los_cabos_travel_destination_le_blanc_spa_resorts_c54af9ab23.webp",
+          "previewUrl": null,
+          "provider": "aws-s3",
+          "provider_metadata": null,
+          "isUrlSigned": true
+        },
+        "btnrinternal": null,
+        "btnrmodal": null,
+        "btnlinternal": null,
+        "btnlmodal": null
+      }
+    ]
+  },
 }
 </script>
 
