@@ -49,7 +49,7 @@ const data = {
         "media": {
           "id": 599,
           "name": "Moon Palace.png",
-          "url": "https://www.thepalacecompany.com/Moon_Palace_ff32ef74b8.png",
+          "url": "assets/img/index/Badges/Moon_Palace_ff32ef74b8.png",
           "caption": null,
           "alternativeText": null,
           "imageformats": {
@@ -85,7 +85,7 @@ const data = {
         "media": {
           "id": 594,
           "name": "Palace_Resorts_Blue.png",
-          "url": "https://www.thepalacecompany.com/Palace_Resorts_Blue_605ef2b293.png",
+          "url": "assets/img/index/Badges/Palace_Resorts_Blue_605ef2b293.png",
           "caption": null,
           "alternativeText": null,
           "imageformats": {
@@ -106,7 +106,7 @@ const data = {
         "media": {
           "id": 798,
           "name": "lbb_hotels_resorts_black_footer.svg",
-          "url": "https://www.thepalacecompany.com/lbb_hotels_resorts_black_footer_bb4d70a02d.svg",
+          "url": "assets/img/index/Badges/lbb_hotels_resorts_black_footer_bb4d70a02d.svg",
           "caption": null,
           "alternativeText": null,
           "imageformats": null,
@@ -120,7 +120,7 @@ const data = {
         "media": {
           "id": 741,
           "name": "baglioni-logo.svg",
-          "url": "https://www.thepalacecompany.com/baglioni_logo_94c83cc23e.svg",
+          "url": "assets/img/index/Badges/baglioni_logo_94c83cc23e.svg",
           "caption": null,
           "alternativeText": null,
           "imageformats": null,
@@ -134,7 +134,7 @@ const data = {
         "media": {
           "id": 738,
           "name": "palace-elite.svg",
-          "url": "https://www.thepalacecompany.com/palace_elite_05e7c6f3c6.svg",
+          "url": "assets/img/index/Badges/palace_elite_05e7c6f3c6.svg",
           "caption": null,
           "alternativeText": null,
           "imageformats": null,
@@ -641,7 +641,7 @@ const data = {
     "media": {
       "id": 580,
       "name": "environment-palace-foundation-the-palace-company.webp",
-      "url": "https://www.thepalacecompany.com/environment_palace_foundation_the_palace_company_528674aef3.webp",
+      "url": "assets/img/index/Align/environment-palace-foundation-the-palace-company.webp",
       "caption": null,
       "alternativeText": null,
       "imageformats": {
@@ -681,7 +681,7 @@ const data = {
     "decorativeLine": true,
     "autoscroll": null,
     "chevron": null,
-    "imageaspec": 'default',
+    "imageaspec": 'aspec4-5',
     "cards": [
       {
         "id": 200,

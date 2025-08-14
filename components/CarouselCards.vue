@@ -88,7 +88,7 @@ const splideOptions = {
 </script>
 
 <template>
-  <div :class="['carousel-cards flex flex-col gap-[40px] xl:gap-[50px] -mx-[20px] md:mx-[-10vw] py-[25px] md:py-[30px] xl:py-[50px]', {'bg-active bg-[--component-bg-alt]': bgColor}]">
+  <div :class="['carousel-cards flex flex-col gap-[40px] xl:gap-[50px] py-[25px] md:py-[30px] xl:py-[50px]', {'bg-active bg-[--color-base-alt]': bgColor}]">
     <div v-if="title || description" class="carousel-cards-header md:w-[80vw] xl:w-[50vw] flex flex-col gap-[30px] px-[20px] md:gap-[40px] md:m-auto md:p-0">
       <div v-if="title">
         <h2 class="text-center">{{ title }}</h2>

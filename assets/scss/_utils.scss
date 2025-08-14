@@ -92,7 +92,7 @@ h3,
 p {
   font-size: $font-size-xs;
   letter-spacing: 0.16px;
-  // font-family: $font-cuartary !important; // LULU
+  font-family: $font-secondary !important; // LULU
   &.description {
     font-size: $font-size-body;
     &-capital {
@@ -106,7 +106,7 @@ p {
 label {
   font-size: $font-size-xs;
   letter-spacing: 0.16px;
-  // font-family: $font-cuartary !important; // LULU
+  // font-family: $font-secondary !important; // LULU
   &.strong,
   &.strong-capital,
   &.strong-big {
@@ -132,7 +132,7 @@ label {
 }
 .note {
   font-size: $font-size-body-small;
-  // font-family: $font-cuartary !important; // LULU
+  // font-family: $font-secondary !important; // LULU
   @media screen and (min-width: $md) {
     font-size: $font-size-xxs;
   }

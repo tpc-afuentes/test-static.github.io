@@ -91,7 +91,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-<div :class="['carousel-center flex flex-col -mx-[20px] md:-mx-[10vw] my-[25px] py-[25px] md:my-[30px] md:py-[30px] xl:my-[2.5vw] xl:py-[2.5vw] 2xl:my-[50px] 2xl:py-[50px] gap-[40px] xl:gap-[60px]', {'bg-[--component-bg-alt]': bgColor}]">
+<div :class="['carousel-center flex flex-col my-[25px] py-[25px] md:my-[30px] md:py-[30px] xl:my-[2.5vw] xl:py-[2.5vw] 2xl:my-[50px] 2xl:py-[50px] gap-[40px] xl:gap-[60px]', {'bg-[--color-base-alt]': bgColor}]">
   <div v-if="title || description || btnText" class="carousel-center__content items-center flex flex-col px-[20px] gap-[30px] md:px-[15vw] md:gap-[40px] xl:w-[50vw] xl:mx-[auto] xl:px-[0px]">
     <div v-if="title">
       <h2> {{ title }} </h2>
