@@ -7,7 +7,8 @@ export default defineNuxtConfig({
       script: [
         { src: '//js.hsforms.net/forms/v2.js', type: 'text/javascript', defer: true }
       ]
-    }
+    },
+    baseURL: 'https://tpc-afuentes.github.io/',
   },
 
   modules: [
