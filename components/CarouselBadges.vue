@@ -1,138 +1,103 @@
-<script setup>
-import { defineAsyncComponent } from 'vue'
-import { Splide, SplideSlide } from '@splidejs/vue-splide'
-import '@splidejs/vue-splide/css'
-
-// const Fade = defineAsyncComponent(() => import('./animations/Fade.client.vue'))
-const ImageStrapi = defineAsyncComponent(() => import('./ImageStrapi.vue'))
-
-const props = defineProps({
-  title: {
-    type: String,
-    default: ''
-  },
-  description: {
-    type: String,
-    default: ''
-  },
-  cards: {
-    type: Array,
-    default: null
-  },
-  decorativeLine: {
-    type: Boolean,
-    default: true
-  },
-  htag: {
-    type: String,
-    default: 'h2'
-  },
-  roundedStyle: {
-    type: Boolean,
-    default: false
-  }
-})
-
-const splideOptions = {
-  mediaQuery: 'min',
-  type: 'slide',
-  lazyLoad: 'nearby',
-  arrows: false,
-  preloadPages: 1,
-  focus: 0,
-  height: 'auto',
-  gap: 30,
-  padding: 20,
-  fixedWidth: 192,
-  fixedHeight: 192,
-  breakpoints: {
-    768: {
-      gap: 24,
-      fixedHeight: 120,
-      fixedWidth : 120,
-      padding: 0,
-    },
-    1280: {
-      gap: 32,
-      fixedWidth : 192,
-      fixedHeight: 192,
-    },
-  }
-}
-</script>
-
+<!-- filepath: c:\Users\afuentes\Documents\GITHUB ------------------------ ENTERPRISE\-------- CLOUD\v2\static-site\test\test-static.github.io\components\CarouselBadges.vue -->
 <template>
-  <div class="carousel-badges flex flex-col gap-[30px] md:gap-[40px] xl:gap-[60px] text-center overflow-hidden w-auto py-[50px] md:py-[60px] xl:py-[5vw] 2xl:py-[100px]">
-    <div v-if="title || description" class="carousel-badges__content flex gap-[30px] flex-col px-[20px] md:px-[100px] md:gap-[40px] xl:w-[50vw] xl:px-0 xl:mx-auto">
-      <div v-if="title">
-        <component :is="htag"> {{ title }} </component>
+  <div class="carousel-container">
+    <div id="carousel-badges" class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li v-for="badge in badges" :key="badge.id" class="splide__slide">
+            <div class="badge-item">
+              <img :src="badge.image" :alt="badge.name" class="badge-image">
+              <p class="badge-name">{{ badge.name }}</p>
+            </div>
+          </li>
+        </ul>
       </div>
-      <div v-if="description">
-        <p class="description-capital"> {{ description }} </p>
-      </div>
-    </div>
-    <div class="carousel-badges__cards md:flex md:items-center md:justify-center" v-if="cards && cards?.length > 0">
-      <ClientOnly>
-        <Splide :options="splideOptions">
-          <SplideSlide :class="['carousel-badges__slide', {'rounded-full': roundedStyle }]" v-for="(item, index) in cards" :key="index">
-            <NuxtLink :to="item.urlexternal"
-                      target="_blank"
-                      class="h-full w-full flex justify-center items-center">
-              <ImageStrapi :image="item.media" />
-            </NuxtLink>
-          </SplideSlide>
-        </Splide>
-      </ClientOnly>
     </div>
   </div>
 </template>
 
-<style lang="scss" scoped>
-.carousel-badges {
-  &__cards {
-    &:has(.splide.is-overflow) {
-      margin-bottom: 40px;
+<script>
+export default {
+  name: 'CarouselBadges',
+  data() {
+    return {
+      badges: [
+        { id: 1, name: 'HTML5', image: '/images/badges/html5.png' },
+        { id: 2, name: 'CSS3', image: '/images/badges/css3.png' },
+        { id: 3, name: 'JavaScript', image: '/images/badges/javascript.png' },
+        { id: 4, name: 'Vue.js', image: '/images/badges/vuejs.png' },
+        { id: 5, name: 'Nuxt.js', image: '/images/badges/nuxtjs.png' },
+        { id: 6, name: 'Node.js', image: '/images/badges/nodejs.png' },
+        { id: 7, name: 'Bootstrap', image: '/images/badges/bootstrap.png' },
+        { id: 8, name: 'Git', image: '/images/badges/git.png' }
+      ]
     }
-    :deep() {
-      ul.splide__pagination {
-        bottom: -40px;
-        gap: 30px;
-        li {
-          button {
-            background: $color-base;
-            height: 5px;
-            opacity: 1;
-            width: 5px;
-            &.is-active {
-              transform: scale(2);
+  },
+  mounted() {
+    this.$nextTick(() => {
+      if (typeof window !== 'undefined' && window.Splide) {
+        const splide = new window.Splide('#carousel-badges', {
+          type: 'loop',
+          perPage: 4,
+          perMove: 1,
+          gap: '1rem',
+          autoplay: true,
+          interval: 3000,
+          pauseOnHover: true,
+          arrows: true,
+          pagination: false,
+          breakpoints: {
+            1024: {
+              perPage: 3,
+            },
+            768: {
+              perPage: 2,
+            },
+            480: {
+              perPage: 1,
             }
           }
-        }
+        });
+        splide.mount();
       }
-    }
-  }
-  &__slide {
-    display: flex;
-    background: $bg-box;
-    align-items: center;
-    justify-content: center;
-    .image-strapi {
-      :deep() {
-        img {
-          width: 130px;
-          height: 96px;
-          object-fit: contain;
-          @media screen and (min-width: $md) {
-            width: 100px;
-            height: 70px;
-          }
-          @media screen and (min-width: $xl) {
-            width: 130px;
-            height: 96px;
-          }
-        }
-      }
-    }
+    });
   }
 }
-</style>
+</script>
+
+<style scoped>
+.carousel-container {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.badge-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+}
+
+.badge-image {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.badge-name {
+  font-size: 0.9rem;
+  margin: 0;
+  color: #333;
+}
+
+:deep(.splide__arrow) {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+}
+
+:deep(.splide__arrow:hover) {
+  background: rgba(0, 0, 0,
