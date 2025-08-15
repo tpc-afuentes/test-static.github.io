@@ -100,4 +100,6 @@ export default {
 }
 
 :deep(.splide__arrow:hover) {
-  background: rgba(0, 0, 0,
+  background: rgba(0, 0, 0, 0.8);
+}
+</style>
