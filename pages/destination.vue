@@ -316,9 +316,9 @@ const data = {
 
 <template>
   <div>
-    <hero v-bind="data.hero" />
+    <!--<hero v-bind="data.hero" />
     <content-intro v-bind="data.contentIntro" />
-    <div> Catalogo Version Simple </div>
-    <carousel-center v-bind="data.carouselCenter" />
+    <catalog v-bind="data.catalog" />
+    <carousel-center v-bind="data.carouselCenter" />-->
   </div>
 </template>

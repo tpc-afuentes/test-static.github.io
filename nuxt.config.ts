@@ -3,30 +3,23 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
 
   app: {
-    head: {
-      script: [
-        { src: '//js.hsforms.net/forms/v2.js', type: 'text/javascript', defer: true }
-      ]
-    },
-    baseURL: 'https://tpc-afuentes.github.io/',
+    baseURL: '/'
   },
 
   modules: [
     '@nuxtjs/i18n',
   ],
-    ssr: true,
-    target: 'static',
-    nitro: {
-      preset: 'static',
-      output: {
-        publicDir: 'docs',
-      },
+
+  ssr: true,
+  nitro: {
+    preset: 'static',
+    output: {
+      publicDir: 'docs',
     },
+  },
+
   i18n: {
     defaultLocale: 'en',
-    lazy: true,
-    seo: false,
-    legacy: false,
     langDir: 'lang',
     baseUrl: 'https://www.thepalacecompany.com/',
     locales: [{

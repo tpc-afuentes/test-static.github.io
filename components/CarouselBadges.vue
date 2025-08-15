@@ -62,7 +62,7 @@ const splideOptions = {
 </script>
 
 <template>
-  <div class="carousel-badges flex flex-col gap-[30px] md:gap-[40px] xl:gap-[60px] text-center overflow-hidden w-auto -mx-[20px] md:-mx-[10vw] py-[50px] md:py-[60px] xl:py-[5vw] 2xl:py-[100px]">
+  <div class="carousel-badges flex flex-col gap-[30px] md:gap-[40px] xl:gap-[60px] text-center overflow-hidden w-auto py-[50px] md:py-[60px] xl:py-[5vw] 2xl:py-[100px]">
     <div v-if="title || description" class="carousel-badges__content flex gap-[30px] flex-col px-[20px] md:px-[100px] md:gap-[40px] xl:w-[50vw] xl:px-0 xl:mx-auto">
       <div v-if="title">
         <component :is="htag"> {{ title }} </component>
@@ -72,15 +72,17 @@ const splideOptions = {
       </div>
     </div>
     <div class="carousel-badges__cards md:flex md:items-center md:justify-center" v-if="cards && cards?.length > 0">
-      <Splide :options="splideOptions">
-        <SplideSlide :class="['carousel-badges__slide', {'rounded-full': roundedStyle }]" v-for="(item, index) in cards" :key="index">
-          <NuxtLink :to="item.urlexternal"
-                    target="_blank"
-                    class="h-full w-full flex justify-center items-center">
-            <ImageStrapi :image="item.media" />
-          </NuxtLink>
-        </SplideSlide>
-      </Splide>
+      <ClientOnly>
+        <Splide :options="splideOptions">
+          <SplideSlide :class="['carousel-badges__slide', {'rounded-full': roundedStyle }]" v-for="(item, index) in cards" :key="index">
+            <NuxtLink :to="item.urlexternal"
+                      target="_blank"
+                      class="h-full w-full flex justify-center items-center">
+              <ImageStrapi :image="item.media" />
+            </NuxtLink>
+          </SplideSlide>
+        </Splide>
+      </ClientOnly>
     </div>
   </div>
 </template>
